@@ -112,6 +112,7 @@ function playGame(gameText) {
                     }, 4000); 
         
                     setTimeout(() => {
+                      gameText.innerHTML = '';
                       restartGame();  
                     }, 8000); 
                   
@@ -222,20 +223,20 @@ function removeConfirmedPlayCSS() {
 };  
 
 function checkGameOver(gameText, player) {  
-  //CHECKS WIN   
+  // Checks Win   
   if (
-    // CHECKS HORIZONTAL LINES
+    // Checks horizontal lines
     (board[0] === board[1] && board[0] === board[2] && board[0] != '') || (board[3] === board[4] && board[3] === board[5] && board[3] != '') || (board[6] === board[7] && board[6] === board[8] && board[6] != '') ||
-    // CHECKS VERTICAL LINES
+    // Checks vertical lines
     (board[0] === board[3] && board[0] === board[6] && board[0] != '') || (board[1] === board[4] && board[1] === board[7] && board[1] != '') || (board[2] === board[5] && board[2] === board[8] && board[2] != '') ||
-    // CHECKS DIAGONAL LINES
+    // Checks diagonal lines
     (board[0] === board[4] && board[0] === board[8] && board[0] != '') || (board[2] === board[4] && board[2] === board[6] && board[2] != '')
   ) {    
     gameText.innerHTML = `<p>${player} Wins!</p>`;    
 
     return true;
   
-    //CHECKS TIE 
+    //Checks tie
   } else if (!board.includes('')) {
     gameText.innerHTML = `<p>It's a draw!</p>`;   
     
