@@ -1,5 +1,5 @@
-body {   
-  background-color: rgb(249, 89, 89);
+body {     
+  background-color: rgb(34, 40, 49);  
   font-family: Courier, Courier, monospace;  
   display: grid;
   place-items: center;  
@@ -10,7 +10,7 @@ p {
 }
 
 .start-game-button {  
-  background-color: rgb(34, 40, 49);
+  background-color: rgb(34, 40, 49);  
   color: white;  
   font-size: 30px;
   font-weight: bold;
@@ -28,13 +28,11 @@ p {
   place-items: center;  
 }
 
-.title {   
-  background-color: rgb(220, 47, 47);
+.title {     
+  background-color: rgb(34, 40, 49);  
   color: white;    
   font-size: 26px;
-  font-weight: bold; 
-  height: 13px;
-  width: 288px; 
+  font-weight: bold;   
   text-align: center;
   margin-top: 40px;
   margin-bottom: 50px;  
@@ -49,9 +47,9 @@ p {
   margin-bottom: 40px;  
 }
 
-.board-button {   
-  background-color: rgb(249, 89, 89);
-  color: rgb(220, 47, 47);
+.board-button {    
+  background-color: rgb(34, 40, 49);   
+  color: rgb(20, 20, 20); 
   font-size: 55px;
   font-weight: bold;
   width: 90px;
@@ -61,7 +59,7 @@ p {
 }
 
 .board-button-confirmed-play {
-  color: rgb(34, 40, 49);  
+  color: white;   
 }
 
 .board-button-ON {
@@ -106,8 +104,9 @@ p {
   color: rgb(34, 40, 49);
 }
 
-.answer-button:active {  
-  border: 3px solid rgb(34, 40, 49);;  
+.answer-button:active {
+  color: rgb(20, 20, 20); 
+  border: 3px solid rgb(20, 20, 20);  
 }
 
 .bold {
